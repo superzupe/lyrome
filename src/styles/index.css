@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  /* COLORS */
+  --color-bg: #f7f5ee;
+  --color-card: #ffffff;
+  --color-footer: #f2f0e8;
+
+  --color-text-header: #1f1f1b;
+  --color-text-strong: #262623;
+  --color-text-primary: #2f2f2b;
+  --color-text-secondary: #6e6e6a;
+
+  --color-border-default: #d4d0c3;
+  --color-border-secondary: #c0bba9;
+  --color-border-hover: #a7a27f;
+
+  --color-button-bg: #a7a27f;
+  --color-button-hover: #8f8a68;
+  --color-button-text: #ffffff;
+
+  /* FONTS */
+  --font-jakarta: "Plus Jakarta Sans", cursive;
+  --font-sans: "DM Sans", serif;
+}
+
+/* =====================
+   BASE STYLE
+   ===================== */
+@layer base {
+  body {
+    @apply bg-bg  font-sans  antialiased;
+  }
+}

@@ -17,8 +17,35 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
+Thumbs.db
+.idea/
+*.swp
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Build output
+build/
+.tmp/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs
+*.log
+*.log.*
+*.out
+*.err
+
+# Coverage
+coverage/
+*.lcov
+
+# Misc
+*.tgz
+*.zip
