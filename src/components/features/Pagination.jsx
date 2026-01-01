@@ -1,7 +1,7 @@
 import { angleLeft, angleRight } from "../../assets/index";
 
 const Pagination = ({ page, totalPages, onPageChange }) => {
-  // if (totalPages <= 1) return null;
+  if (totalPages <= 1) return null;
 
   return (
     <div className="flex flex-row gap-2 justify-center items-center mt-10">
