@@ -31,7 +31,9 @@ const LyricsPage = () => {
     return (
       <div className="flex flex-col justify-center items-center">
         <Header />
-        <p className="mt-40 text-text-secondary">Loading lyrics...</p>
+        <div className="min-h-screen flex flex-col justify-center items-center">
+          <p className="text-text-secondary">Loading lyrics...</p>
+        </div>
         <Footer />
       </div>
     );
@@ -41,7 +43,7 @@ const LyricsPage = () => {
     <div className="flex flex-col justify-center items-center">
       <Header />
       <div className="min-h-screen mt-25 md:mt-32">
-        <div className="flex flex-col items-center gap-3 mb-9 w-full max-w-xs md:min-w-5xl">
+        <div className="flex flex-col items-start md:items-center justify-start gap-3 mb-9 w-full max-w-90 md:min-w-5xl">
           <SongCard
             item={lyric}
             type="content"

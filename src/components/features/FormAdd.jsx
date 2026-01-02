@@ -16,7 +16,9 @@ const FormAdd = ({ onSubmit, initialData, onCancel }) => {
       setForm({
         title: initialData.title ?? "",
         artist: initialData.artist ?? "",
-        thumb: initialData.thumb ?? "",
+        thumb:
+          initialData.thumb ||
+          "https://ssluesdwhncyhegzuzwy.supabase.co/storage/v1/object/public/thum-lyrics/thumb-lyrics-default.png",
         lyrics: initialData.lyrics ?? "",
       });
     } else {
