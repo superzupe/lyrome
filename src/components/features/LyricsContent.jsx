@@ -11,7 +11,7 @@ const LyricsContent = ({ item }) => {
           {verse.split("\n").map((line, i) => (
             <p
               key={i}
-            
+            className="text-base md:text-lg text-text-primary"
             >
               {line}
             </p>
